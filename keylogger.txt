@@ -1,0 +1,3 @@
+#example of output : 
+
+sudo [Key.space] su [Key.enter] password [Key.enter] ls [Key.enter]
